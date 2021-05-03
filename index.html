@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recalculando</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<div class="contenedor">
+    <div class="caja1" id="sumando1" data-value="random1">nro1</div>
+    <div class="suma">+</div>
+    <div class="caja2" id="sumando2" data-value="random2">nro2</div>
+    <div class="igual">=</div> 
+</div>
+
+
+<div class="contenedor2">    
+        <input id="resultadoUsuario" class="caja3" type="text">    
+        <input type="button" value="send" onclick="suma()">
+        <div id="resultadoCorrecto">rta <br></div>
+</div>
+
+
+
+<div class="contenedor3">
+    <input type="submit" value="Start" class="" onclick="start()">
+    <input type="submit" value="Reset" class="">
+    <input type="submit" value="End" class="">
+</div>
+
+
+
+    <script src="script.js"></script>
+    <script src="funciones.js"></script>
+</body>
+</html>
