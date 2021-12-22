@@ -4,64 +4,96 @@
   box-sizing: border-box;
 }
 
-.contenedor{
-    background: #52057b;
-    width: 60vw;
-    height: 50vh;
+body{
+    background-color: #f1f1ee;    
+}
+
+.contenedor-total{
+    width: 90%;
+    height: 100vh;
     margin: auto;
+    border: 1px solid red;
     display: flex;
-    justify-content: center;
-    
-    
-    
-}
-
-.caja1, .caja2{
-    background: #892cdc;
-    width: 16vw;
-    height: 30vh;
-    margin: 12px;
-    text-align: center;
-}
-
-
-.suma, .igual{
-    background-color: red;
-    color: white;
-    width: 6vw;
-    height: 8vh;
-    margin: 1px;
-    text-align: center;
-}
-
-/*................................................................*/
-
-.contenedor2{
-    background: orange;
-    width: 60vw;
-    height: 35vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.caja3{
-    background: #bc6ff1;
-    width: 30vw;
-    height: 30vh;
-    margin: 12px;
-    text-align: center;
-    font-size: 40px;
-}
-
-/*.......................................................................*/
-
-.contenedor3{
-    background: green;
-    width: 60vw;
-    height: 10vh;
-    margin: auto;
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-pizarra{
+    width: 70%;
+    height: 500px;
+    background-color: #000000;
+    border: 20px solid #F0BB62;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sumando1{
+    border: 1px solid blue;
+    display: inline-block;
+}
+
+.sumando2{
+    border: 1px solid yellow;
+    display: inline-block;
+ 
+}
+
+.suma{
+    border: 1px solid green;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.resultado{
+    border: 1px solid purple;
+    display: inline-block;
+    border-top: 5px solid #fff;
+    
+}
+
+
+.operacionMat{
+    border: 2px dashed red;
+    position: relative;
+    bottom: 64px;
+}
+
+.random{
+    width: 50%;
+    border: 2px dashed orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones{
+    border: 2px dashed lightcoral;
+    width: 15%;
+    height: 28%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.btn{
+    width: 90%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: auto;
+    background-color: rgb(252, 9, 130);
+    cursor: pointer;
+    border: none;
+    color: rgb(228, 237, 245);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    opacity: 0.7;
 }

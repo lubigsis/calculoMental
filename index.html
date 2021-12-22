@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recalculando</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="contenedor">
-    <div class="caja1" id="sumando1" data-value="random1">nro1</div>
-    <div class="suma">+</div>
-    <div class="caja2" id="sumando2" data-value="random2">nro2</div>
-    <div class="igual">=</div> 
-</div>
-
-
-<div class="contenedor2">    
-        <input id="resultadoUsuario" class="caja3" type="text">    
-        <input type="button" value="send" onclick="suma()">
-        <div id="resultadoCorrecto">rta <br></div>
-</div>
-
-
-
-<div class="contenedor3">
-    <input type="submit" value="Start" class="" onclick="start()">
-    <input type="submit" value="Reset" class="">
-    <input type="submit" value="End" class="">
-</div>
-
-
+    <div class="contenedor-total">
+        <div class="contenedor-pizarra"> 
+            <div class="operacionMat">
+                <div class="suma">+</div>
+            </div>
+            <div class="random">              
+                <div class="sumando1" id="sumando1-JS">11</div>               
+                <div class="sumando2" id="sumando2-JS">65</div> 
+                <div class="resultado">xxxx</div>            
+            </div>                    
+        </div>
+        
+            <div class="botones">
+                <input type="button" value="start" class="btn">
+                <input type="reset" value="reset" class="btn">
+            </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="funciones.js"></script>
